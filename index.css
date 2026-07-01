@@ -2,84 +2,165 @@
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
+
 body{
-    background-color:rgb(212, 165, 165);
+    background-color: #E8DDCB;
 }
+
 .navbar{
-    margin: 10px 0px 25px 0px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#033649;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 1000;
 }
-p{
+
+.title{
+    color:#CDB380;
+    font-size:30px;
+    font-weight: 700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:50px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#CDB380;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#E8DDCB;
+}
+
+.agoda-logo{
+    margin: 50px 0px 40px 0px;
+}
+.agoda-logo .logo{
     text-align: center;
-}
-span{
     font-weight: bolder;
     font-size: 150px;
-    text-align: center;
 }
-img{
+.main-image{
     width: 100%;
     height: 500px;
-    border-radius: 100px;
+    border-radius: 40px;
 }
 h2{
     text-align: center;
     font-size: 50px;
-}
-.first-heading{
-    color: #031634;
-    margin: 30px;
-}
-.second-heading{
     color: #033649;
-    margin: 30px;
-}
-.third-heading{
-    color: #036564;
-    margin: 30px;
-}
-.image{
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-.box{
-    background-color: black;
-    width: 350px;
-    height: 370px;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-    border-radius: 30px;
-    transition: all 1s ease;
-}
-.box button{
-    width: 200px;
-    height: 40px;
-    background-color: dodgerblue;
-    color: white;
-    font-size: large;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-.box{
-    display: inline-block ;
-}
-.main .box{
-    border-radius: 30px;
+    margin: 50px;
 }
 .main{
     display: flex;
     justify-content: space-evenly;
 }
+.box{
+    background-color: #031634;
+    width: 350px;
+    height: 440px;
+    font-size: x-large;
+    color: white;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
 .main .box:hover{
     transform: scale(1.1);
-    background-color: #A7DBD8;
+    color: #F9F2E7;
+    box-shadow: 5px 5px 2px gray;
+}
+h3{
+    text-align: center;
+    margin: 10px;
+    color: #CDB380;
+}
+.hotel-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.main .box .location{
+    font-size: 20px;
+    color: gray;
+    padding-left: 20px;
+}
+.main .box .rating{
+    font-size: 22px;
+    color: #ff690f;
+    padding-left: 20px;
+}
+.main .box .price{
+    font-size: 25px;
+    padding-top: 8px;
+    color: rgb(215, 194, 194);
+    padding-left: 26px;
+}
+.box button{
+    width: 100%;
+    height: 40px;
+    background-color: #033649;
+    color: white;
+    border: none;
+    font-size: 27px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.box button:hover{
+    background-color: wheat;
     color: black;
 }
-.main .box:hover button{
-    transform: scaleX(1.2);
-    background-color: #F9F2E7;
-    color: black;
+footer{
+    background-color: #033649;
+    color: #CDB380;
+    margin-top: 40px;
+    padding: 30px 20px;
+}
+.footer-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer-col{
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.footer-col p{
+    font-size: 14px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+.footer-col a{
+    display: block;
+    color: #CDB380;
+    text-decoration: none;
+    margin: 6px 0;
+}
+.footer-col a:hover{
+    text-decoration: underline;
+}
+.social-icons{
+    margin: 10px 0;
+}
+.social-icons a{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 18px;
 }
