@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            padding: 200px 450px;
+            background-image: url(https://wallpapercave.com/wp/wp10292967.jpg);
+            background-size: cover;
+        }
+        label{
+            color: #E8DDCB;
+            font-size: 30px;
+        }
+        #username{
+            background-color: #033649;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #email{
+            background-color: #033649;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #contact{
+            background-color: #033649;
+            color: white;
+            font-size: 19px;
+            border-radius: 10px;
+        }
+        #button{
+            width: 120px;
+            background-color: #033649;
+            color: white;
+            font-size: 25px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 90px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <hr>
+            <label for="username">Name:</label>
+            <input type="text" id="username" placeholder="Enter your name"> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="email"> <br> <br>
+            <label for="contact">Contact:</label> 
+            <input type="tel" placeholder="Enter your contact" id="contact"> <br><br>
+            <hr>
+            <input type="button" value="Register" id="button">
+        </form>
+    </div>
+</body>
+</html>
